@@ -53,6 +53,7 @@ import { AnalyticsCustomersComponent } from './components/pages/analytics-custom
 import { AnalyticsReportsComponent } from './components/pages/analytics-reports/analytics-reports.component';
 import { BlankPageComponent } from './components/pages/blank-page/blank-page.component';
 import { ConnectionsComponent } from './components/pages/connections/connections.component';
+import { CreateOrderComponent } from './components/pages/ecommerce/create-order/create-order.component';
 import { CreateProductComponent } from './components/pages/ecommerce/create-product/create-product.component';
 import { ProductDetailsComponent } from './components/pages/ecommerce/product-details/product-details.component';
 import { ProductSellersComponent } from './components/pages/ecommerce/product-sellers/product-sellers.component';
@@ -179,6 +180,7 @@ const routes: Routes = [
     {path: 'ecommerce/products', component: ProductsComponent},
     {path: 'ecommerce/product-details', component: ProductDetailsComponent},
     {path: 'ecommerce/create', component: CreateProductComponent},
+    {path: 'ecommerce/create-order', component: CreateOrderComponent},
     {path: 'ecommerce/orders', component: ProductsOrdersComponent},
     {path: 'ecommerce/order-details', component: ProductsOrderDetailsComponent},
     {path: 'ecommerce/customers', component: ProductsCustomersComponent},

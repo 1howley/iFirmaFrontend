@@ -1,0 +1,78 @@
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-space-between">
+    <h5 class="mb-0">Create Order</h5>
+    <ol class="breadcrumb mb-0 ps-0">
+        <li class="breadcrumb-item">
+            <a routerLink="/">
+                <i class="ri-home-8-line"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item fw-semibold">Create Order</li>
+    </ol>
+</div>
+
+<mat-card class="mb-25 tagus-card">
+    <mat-card-header class="border-bottom">
+        <h5 class="mb-0">Select Product</h5>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="tagus-form-group">
+                    <label class="d-block mb-12 fw-semibold gray-color">Search Product</label>
+                    <mat-form-field appearance="fill">
+                        <i class="ri-list-check"></i>
+                        <mat-label>Pedra</mat-label>
+                        <mat-select>
+                            <mat-option *ngFor="let stone of stones" [value]="stone.value">
+                                {{stone.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="tagus-form-group">
+                    <label class="d-block mb-12 fw-semibold gray-color">Valor Unitário</label>
+                    <mat-form-field appearance="fill" class="w-full">
+                        <i class="flaticon-price-tag"></i>
+                        <mat-label>R$</mat-label>
+                        <input matInput type="number" placeholder="0.00">
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="tagus-form-group">
+                    <label class="d-block mb-12 fw-semibold gray-color">Quantidade</label>
+                    <mat-form-field appearance="fill" class="w-full">
+                        <i class="ri-list-check"></i>
+                        <mat-label>Quantidade</mat-label>
+                        <input matInput type="number" placeholder="1" value="1">
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="tagus-form-group">
+                    <label class="d-block mb-12 fw-semibold gray-color">Observação</label>
+                    <mat-form-field appearance="fill" class="w-full">
+                        <i class="flaticon-quote"></i>
+                        <mat-label>Observação</mat-label>
+                        <textarea matInput rows="3" placeholder="Escreva sua observação aqui"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </div>
+    </mat-card-content>
+</mat-card>
+<div style="text-align: center;">
+    <button mat-fab color="primary">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>

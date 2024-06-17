@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatMenuModule } from '@angular/material/menu';
 import { FullCalendarModule } from '@fullcalendar/angular';
@@ -418,6 +418,7 @@ import { SaStatsComponent } from './components/dashboard/saas-app/sa-stats/sa-st
 import { SaRevenueSummaryComponent } from './components/dashboard/saas-app/sa-revenue-summary/sa-revenue-summary.component';
 import { SaSalesAnalyticsComponent } from './components/dashboard/saas-app/sa-sales-analytics/sa-sales-analytics.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
+import { CreateOrderComponent } from './components/pages/ecommerce/create-order/create-order.component';
 
 @NgModule({
     declarations: [
@@ -538,6 +539,7 @@ import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.
         ProductsComponent,
         ProductDetailsComponent,
         CreateProductComponent,
+        CreateOrderComponent,
         ProductsOrderDetailsComponent,
         ProductsOrdersComponent,
         ProductsCustomersComponent,
