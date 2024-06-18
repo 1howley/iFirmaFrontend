@@ -53,7 +53,6 @@ import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 import { QuillModule } from 'ngx-quill';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { NgxDropzoneModule } from 'ngx-dropzone';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -787,6 +786,7 @@ import { CreateOrderComponent } from './components/pages/ecommerce/create-order/
         ComingSoonComponent,
     ],
     imports: [
+        HttpClientModule,
         BrowserModule,
         AppRoutingModule,
         MatMenuModule,

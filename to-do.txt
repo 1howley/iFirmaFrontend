@@ -1,0 +1,14 @@
+- fazer utilizavel para charles pedras
+- ao final tentar deixar o maximo possivel white label
+
+- frontend
+    - eliminar coisas desnecessarias
+    - adicionar paginas especificas charles pedras ( fornecedor, romaneio )
+    - deixar mais proximo do usuario
+
+- backend
+    - por enquanto vou usar um servidor local para adicionar as funcionalidades
+    - posteriormente trabalhar com prisma
+    - buscar a integracao com o asaas
+
+    
