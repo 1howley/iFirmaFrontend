@@ -8,6 +8,7 @@
 
 - backend
     - por enquanto vou usar um servidor local para adicionar as funcionalidades
+    - criar um rep separado para o back (acho melhor)
     - posteriormente trabalhar com prisma
     - buscar a integracao com o asaas
 
