@@ -417,10 +417,11 @@ import { SaStatsComponent } from './components/dashboard/saas-app/sa-stats/sa-st
 import { SaRevenueSummaryComponent } from './components/dashboard/saas-app/sa-revenue-summary/sa-revenue-summary.component';
 import { SaSalesAnalyticsComponent } from './components/dashboard/saas-app/sa-sales-analytics/sa-sales-analytics.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
-import { CreateOrderComponent } from './components/pages/ecommerce/create-order/create-order.component';
+import { CustomerDetailsComponent } from './components/pages/ecommerce/customer-details/customer-details.component';
 
 @NgModule({
     declarations: [
+        CustomerDetailsComponent,
         AppComponent,
         DashboardComponent,
         AppsComponent,
@@ -538,7 +539,6 @@ import { CreateOrderComponent } from './components/pages/ecommerce/create-order/
         ProductsComponent,
         ProductDetailsComponent,
         CreateProductComponent,
-        CreateOrderComponent,
         ProductsOrderDetailsComponent,
         ProductsOrdersComponent,
         ProductsCustomersComponent,

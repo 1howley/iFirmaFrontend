@@ -5,6 +5,7 @@
     - eliminar coisas desnecessarias
     - adicionar paginas especificas charles pedras ( fornecedor, romaneio )
     - deixar mais proximo do usuario
+    - gerenciador de moedas!
 
 - backend
     - por enquanto vou usar um servidor local para adicionar as funcionalidades
