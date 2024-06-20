@@ -42,5 +42,4 @@ export class CreateProductComponent {
     ngOnDestroy(): void {
         this.editor.destroy();
     }
-
 }

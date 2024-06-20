@@ -12,11 +12,60 @@
     </ol>
 </div>
 
-<div
-    class="row justify-content-center"
-    [class.component-dark-theme]="themeService.isDark()"
-    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
->
+<mat-card class="mb-25 tagus-card note-box">
+    <mat-card-header class="border-bottom">
+        <h5 class="mb-0">Select Product</h5>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="note-box">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Search Product</label>
+                        <mat-form-field appearance="fill" class="w-full">
+                            <i class="ri-list-check"></i>
+                            <mat-label>Product</mat-label>
+                            <input matInput type="text">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Unitary Value</label>
+                        <mat-form-field appearance="fill" class="w-full">
+                            <i class="flaticon-price-tag"></i>
+                            <mat-label>R$</mat-label>
+                            <input matInput type="number" placeholder="0.00">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Total Quantity</label>
+                        <mat-form-field appearance="fill" class="w-full">
+                            <i class="ri-list-check"></i>
+                            <mat-label>Quantity</mat-label>
+                            <input matInput type="number" placeholder="1" value="1">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <button mat-button type="submit" class="default-btn">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
+
+
+
+<div class="row justify-content-center" [class.component-dark-theme]="themeService.isDark()"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()">
     <div class="col-lg-7 col-xl-8 col-md-12">
         <mat-card class="mb-25 tagus-card">
             <mat-card-header>
@@ -39,7 +88,8 @@
                             <tr>
                                 <td class="text-start">
                                     <a routerLink="/" class="d-flex align-items-center product-info">
-                                        <img src="assets/img/recent-orders/product1.jpg" class="border-radius me-12" width="50" alt="product">
+                                        <img src="assets/img/recent-orders/product1.jpg" class="border-radius me-12"
+                                            width="50" alt="product">
                                         <div class="title">
                                             <h5 class="fw-semibold mb-5">Laptop Macos Pro</h5>
                                             <span class="d-block muted-color fw-medium">
@@ -61,7 +111,8 @@
                             <tr>
                                 <td class="text-start">
                                     <a routerLink="/" class="d-flex align-items-center product-info">
-                                        <img src="assets/img/recent-orders/product2.jpg" class="border-radius me-12" width="50" alt="product">
+                                        <img src="assets/img/recent-orders/product2.jpg" class="border-radius me-12"
+                                            width="50" alt="product">
                                         <div class="title">
                                             <h5 class="fw-semibold mb-5">Smart Camera XD6</h5>
                                             <span class="d-block muted-color fw-medium">
@@ -83,7 +134,8 @@
                             <tr>
                                 <td class="text-start">
                                     <a routerLink="/" class="d-flex align-items-center product-info">
-                                        <img src="assets/img/recent-orders/product3.jpg" class="border-radius me-12" width="50" alt="product">
+                                        <img src="assets/img/recent-orders/product3.jpg" class="border-radius me-12"
+                                            width="50" alt="product">
                                         <div class="title">
                                             <h5 class="fw-semibold mb-5">Pixi 8 Wireless Airphone</h5>
                                             <span class="d-block muted-color fw-medium">
@@ -105,7 +157,8 @@
                             <tr>
                                 <td class="text-start">
                                     <a routerLink="/" class="d-flex align-items-center product-info">
-                                        <img src="assets/img/recent-orders/product4.jpg" class="border-radius me-12" width="50" alt="product">
+                                        <img src="assets/img/recent-orders/product4.jpg" class="border-radius me-12"
+                                            width="50" alt="product">
                                         <div class="title">
                                             <h5 class="fw-semibold mb-5">Jebble Smart Watch</h5>
                                             <span class="d-block muted-color fw-medium">
@@ -177,16 +230,36 @@
         </mat-card>
         <mat-card class="mb-25 tagus-card">
             <mat-card-header>
-                <h5 class="mb-0">Have A Promo Code?</h5>
+                <h5 class="mb-0">Apply Discount</h5>
             </mat-card-header>
             <mat-card-content>
                 <form class="note-box">
-                    <label class="d-block mb-12 fw-semibold gray-color">Apply Coupon</label>
                     <div class="form-group">
                         <mat-form-field appearance="fill">
-                            <i class="ri-braces-line"></i>
-                            <mat-label>Coupon code</mat-label>
+                            <i class="flaticon-price-tag-1"></i>
+                            <mat-label>Discount Rate</mat-label>
                             <input matInput>
+                        </mat-form-field>
+                    </div>
+                    <div class="text-end">
+                        <button mat-button type="submit" class="default-btn">
+                            Apply
+                        </button>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="mb-25 tagus-card">
+            <mat-card-header>
+                <h5 class="mb-0">Shipping Charge</h5>
+            </mat-card-header>
+            <mat-card-content>
+                <form class="note-box">
+                    <div class="form-group">
+                        <mat-form-field appearance="fill">
+                            <i class="flaticon-fast-delivery"></i>
+                            <mat-label>Tax</mat-label>
+                            <input matInput type="number">
                         </mat-form-field>
                     </div>
                     <div class="text-end">
