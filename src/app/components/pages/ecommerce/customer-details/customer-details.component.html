@@ -1,1 +1,311 @@
-<p>custumer-details works!</p>
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-space-between">
+    <h5 class="mb-0">Customer Details</h5>
+    <ol class="breadcrumb mb-0 ps-0">
+        <li class="breadcrumb-item">
+            <a routerLink="/">
+                <i class="ri-home-8-line"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item fw-semibold">Customer Details</li>
+    </ol>
+</div>
+
+<mat-card class="mb-25 tagus-card">
+    <mat-card-header>
+        <h5 class="mb-0">Customer Information</h5>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="note-box">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">First Name</label>
+                        <mat-form-field appearance="fill">
+                            <i class="ri-user-3-line"></i>
+                            <mat-label>Enter name</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Last Name</label>
+                        <mat-form-field appearance="fill">
+                            <i class="ri-user-3-line"></i>
+                            <mat-label>Enter name</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Email Address <span>*</span></label>
+                        <mat-form-field appearance="fill">
+                            <i class="ri-mail-line"></i>
+                            <mat-label>Enter email address</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Phone</label>
+                        <mat-form-field appearance="fill">
+                            <i class="ri-phone-line"></i>
+                            <mat-label>Enter phone number</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Address</label>
+                        <mat-form-field appearance="fill">
+                            <i class="ri-map-pin-line"></i>
+                            <mat-label>Enter location</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Country</label>
+                        <mat-form-field appearance="fill">
+                            <i class="ri-map-2-line"></i>
+                            <mat-label>Enter country</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="tagus-form-group without-icon">
+                        <label class="d-block mb-12 fw-semibold gray-color">Town/City</label>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter town/city</mat-label>
+                            <mat-select>
+                                <mat-option value="1">London</mat-option>
+                                <mat-option value="2">Tokyo</mat-option>
+                                <mat-option value="3">New York</mat-option>
+                                <mat-option value="4">Beijing</mat-option>
+                                <mat-option value="5">Paris</mat-option>
+                                <mat-option value="6">Osaka</mat-option>
+                                <mat-option value="6">Chicago</mat-option>
+                                <mat-option value="6">İstanbul</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="tagus-form-group without-icon">
+                        <label class="d-block mb-12 fw-semibold gray-color">State</label>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter state</mat-label>
+                            <mat-select>
+                                <mat-option value="1">London</mat-option>
+                                <mat-option value="2">Tokyo</mat-option>
+                                <mat-option value="3">New York</mat-option>
+                                <mat-option value="4">Beijing</mat-option>
+                                <mat-option value="5">Paris</mat-option>
+                                <mat-option value="6">Osaka</mat-option>
+                                <mat-option value="6">Chicago</mat-option>
+                                <mat-option value="6">İstanbul</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="tagus-form-group without-icon">
+                        <label class="d-block mb-12 fw-semibold gray-color">Zip Code</label>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter zip code</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Description</label>
+                        <mat-form-field appearance="fill">
+                            <i class="ri-information-line"></i>
+                            <mat-label>Some description text...</mat-label>
+                            <textarea matInput rows="6"></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end">
+                <button mat-button type="submit" class="default-btn">
+                    Edit Customer
+                </button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
+
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 mb-25">
+        <mat-card class="mb-25 tagus-card">
+            <mat-card-header>
+                <h5 class="mb-0">Orders</h5>
+                <button type="button" mat-button class="position-relative btn bg-transparent border-none"
+                    [matMenuTriggerFor]="monthMenu">
+                    Last 7 Days
+                </button>
+                <mat-menu #monthMenu="matMenu" class="monthMenu" xPosition="before">
+                    <button mat-menu-item type="button" class="bg-transparent border-none">Today</button>
+                    <button mat-menu-item type="button" class="bg-transparent border-none">Last Month</button>
+                    <button mat-menu-item type="button" class="bg-transparent border-none">Last Year</button>
+                    <button mat-menu-item type="button" class="bg-transparent border-none">All Time</button>
+                </mat-menu>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="mat-elevation-z8 tagus-mat-table">
+                    <table mat-table [dataSource]="dataSource">
+                        <!-- Order ID Column -->
+                        <ng-container matColumnDef="position">
+                            <th mat-header-cell *matHeaderCellDef class="text-start">Order ID</th>
+                            <td mat-cell *matCellDef="let element" class="fw-semibold text-start">{{element.position}}
+                            </td>
+                        </ng-container>
+
+                        <!-- Product Column -->
+                        <ng-container matColumnDef="product">
+                            <th mat-header-cell *matHeaderCellDef class="text-start">Product</th>
+                            <td mat-cell *matCellDef="let element" class="text-start">
+                                <a routerLink="/" class="d-flex align-items-center product-info">
+                                    <img [src]="element.product.productImage" alt="product">
+                                    {{element.product.productName}}
+                                </a>
+                            </td>
+                        </ng-container>
+
+                        <!-- Price Column -->
+                        <ng-container matColumnDef="price">
+                            <th mat-header-cell *matHeaderCellDef>Price</th>
+                            <td mat-cell *matCellDef="let element">{{element.price}}</td>
+                        </ng-container>
+
+                        <!-- Date Column -->
+                        <ng-container matColumnDef="date">
+                            <th mat-header-cell *matHeaderCellDef>Date</th>
+                            <td mat-cell *matCellDef="let element">{{element.date}}</td>
+                        </ng-container>
+
+                        <!-- Status Column -->
+                        <ng-container matColumnDef="status">
+                            <th mat-header-cell *matHeaderCellDef>Status</th>
+                            <td mat-cell *matCellDef="let element">
+                                <span class="badge" *ngIf="element.status.pending">{{element.status.pending}}</span>
+                                <span class="badge outOfStock"
+                                    *ngIf="element.status.outOfStock">{{element.status.outOfStock}}</span>
+                                <span class="badge delivered"
+                                    *ngIf="element.status.delivered">{{element.status.delivered}}</span>
+                            </td>
+                        </ng-container>
+
+                        <!-- Rating Column -->
+                        <ng-container matColumnDef="rating">
+                            <th mat-header-cell *matHeaderCellDef>Rating</th>
+                            <td mat-cell *matCellDef="let element">
+                                <span>{{element.rating.star}}</span>
+                                {{element.rating.overall}}
+                            </td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons>
+                    </mat-paginator>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="col-lg-6 col-md-12 mb-25">
+        <mat-card class="mb-25 tagus-card">
+            <mat-card-header>
+                <h5 class="mb-0">Payments</h5>
+                <button type="button" mat-button class="position-relative btn bg-transparent border-none"
+                    [matMenuTriggerFor]="monthMenu">
+                    Last 7 Days
+                </button>
+                <mat-menu #monthMenu="matMenu" class="monthMenu" xPosition="before">
+                    <button mat-menu-item type="button" class="bg-transparent border-none">Today</button>
+                    <button mat-menu-item type="button" class="bg-transparent border-none">Last Month</button>
+                    <button mat-menu-item type="button" class="bg-transparent border-none">Last Year</button>
+                    <button mat-menu-item type="button" class="bg-transparent border-none">All Time</button>
+                </mat-menu>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="mat-elevation-z8 tagus-mat-table">
+                    <table mat-table [dataSource]="dataSource">
+                        <!-- Order ID Column -->
+                        <ng-container matColumnDef="position">
+                            <th mat-header-cell *matHeaderCellDef class="text-start">Payments ID</th>
+                            <td mat-cell *matCellDef="let element" class="fw-semibold text-start">{{element.position}}
+                            </td>
+                        </ng-container>
+
+                        <!-- Product Column -->
+                        <ng-container matColumnDef="product">
+                            <th mat-header-cell *matHeaderCellDef class="text-start">Product</th>
+                            <td mat-cell *matCellDef="let element" class="text-start">
+                                <a routerLink="/" class="d-flex align-items-center product-info">
+                                    <img [src]="element.product.productImage" alt="product">
+                                    {{element.product.productName}}
+                                </a>
+                            </td>
+                        </ng-container>
+
+                        <!-- Price Column -->
+                        <ng-container matColumnDef="price">
+                            <th mat-header-cell *matHeaderCellDef>Price</th>
+                            <td mat-cell *matCellDef="let element">{{element.price}}</td>
+                        </ng-container>
+
+                        <!-- Date Column -->
+                        <ng-container matColumnDef="date">
+                            <th mat-header-cell *matHeaderCellDef>Date</th>
+                            <td mat-cell *matCellDef="let element">{{element.date}}</td>
+                        </ng-container>
+
+                        <!-- Status Column -->
+                        <ng-container matColumnDef="status">
+                            <th mat-header-cell *matHeaderCellDef>Status</th>
+                            <td mat-cell *matCellDef="let element">
+                                <span class="badge" *ngIf="element.status.pending">{{element.status.pending}}</span>
+                                <span class="badge outOfStock"
+                                    *ngIf="element.status.outOfStock">{{element.status.outOfStock}}</span>
+                                <span class="badge delivered"
+                                    *ngIf="element.status.delivered">{{element.status.delivered}}</span>
+                            </td>
+                        </ng-container>
+
+                        <!-- Rating Column -->
+                        <ng-container matColumnDef="rating">
+                            <th mat-header-cell *matHeaderCellDef>Rating</th>
+                            <td mat-cell *matCellDef="let element">
+                                <span>{{element.rating.star}}</span>
+                                {{element.rating.overall}}
+                            </td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons>
+                    </mat-paginator>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<div class="col-xxl-8">
+
+    <app-analytics-stats></app-analytics-stats>
+    
+</div>
