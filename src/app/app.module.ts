@@ -418,6 +418,7 @@ import { SaRevenueSummaryComponent } from './components/dashboard/saas-app/sa-re
 import { SaSalesAnalyticsComponent } from './components/dashboard/saas-app/sa-sales-analytics/sa-sales-analytics.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { CustomerDetailsComponent } from './components/pages/ecommerce/customer-details/customer-details.component';
+import { ExpensesComponent } from './components/dashboard/expenses/expenses.component';
 
 @NgModule({
     declarations: [
@@ -724,6 +725,7 @@ import { CustomerDetailsComponent } from './components/pages/ecommerce/customer-
         ConfirmMailComponent,
         LockScreenComponent,
         BasicTableComponent,
+        ExpensesComponent,
         DataTableComponent,
         DtTeamMembersComponent,
         DtTasksComponent,

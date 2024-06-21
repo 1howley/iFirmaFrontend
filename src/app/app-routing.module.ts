@@ -134,6 +134,7 @@ import { HelpDeskComponent } from './components/dashboard/help-desk/help-desk.co
 import { SaasAppComponent } from './components/dashboard/saas-app/saas-app.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { CustomerDetailsComponent } from './components/pages/ecommerce/customer-details/customer-details.component';
+import { ExpensesComponent } from './components/dashboard/expenses/expenses.component';
 
 const routes: Routes = [
     {path: '', component: EcommerceComponent},
@@ -144,6 +145,7 @@ const routes: Routes = [
     {path: 'help-desk', component: HelpDeskComponent},
     {path: 'saas-app', component: SaasAppComponent},
     {path: 'chat', component: ChatComponent},
+    {path: 'expenses', component: ExpensesComponent},
     {path: 'email', component: EmailComponent},
     {path: 'email/read', component: ReadEmailComponent},
     {path: 'email/compose', component: ComposeEmailComponent},

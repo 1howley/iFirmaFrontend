@@ -1,0 +1,111 @@
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-space-between">
+    <h5 class="mb-0">Expenses</h5>
+    <ol class="breadcrumb mb-0 ps-0">
+        <li class="breadcrumb-item">
+            <a routerLink="/">
+                <i class="ri-home-8-line"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item fw-semibold">Expenses</li>
+    </ol>
+</div>
+
+<div class="row"
+    [class.component-dark-theme]="themeService.isDark()"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="col-lg-4 col-md-12">
+        <mat-card class="mb-25 tagus-card">
+            <mat-card-header>
+                <h5 class="mb-0">Expense Distribution</h5>
+            </mat-card-header>
+            <app-pie-chartjs></app-pie-chartjs>
+        </mat-card>
+    </div>
+    <div class="col-lg-8 col-md-12">
+        <mat-card class="mb-25 tagus-card">
+            <mat-card-header>
+                <h5 class="mb-0">Last Expenses</h5>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="best-selling-products-table table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="gray-color">
+                                    <a routerLink="/" class="d-flex align-items-center main-color product-info">
+                                        <img src="assets/img/recent-orders/product8.jpg" alt="product">
+                                        <div class="title">
+                                            <span>Tagus Airpod x-Zon</span>
+                                            ID: A3652
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>$289.50</td>    
+                                <td class="stock-number">450 <span class="muted-color">(550)</span></td>
+                                <td class="stock fw-semibold main-color">Stock</td>
+                            </tr>
+                            <tr>
+                                <td class="gray-color">
+                                    <a routerLink="/" class="d-flex align-items-center main-color product-info">
+                                        <img src="assets/img/recent-orders/product5.jpg" alt="product">
+                                        <div class="title">
+                                            <span>Smart Watch F8 Pro</span>
+                                            ID: A3652
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>$289.50</td>
+                                <td class="stock-number">10 <span class="muted-color">(1000)</span></td>
+                                <td class="stock fw-semibold main-color">Stock</td>
+                            </tr>
+                            <tr>
+                                <td class="gray-color">
+                                    <a routerLink="/" class="d-flex align-items-center main-color product-info">
+                                        <img src="assets/img/recent-orders/product16.jpg" alt="product">
+                                        <div class="title">
+                                            <span>Nord Fold ZL</span>
+                                            ID: A3658
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>$289.50</td>
+                                <td class="stock-number">543 <span class="muted-color">(600)</span></td>
+                                <td class="stock fw-semibold main-color">Stock</td>
+                            </tr>
+                            <tr>
+                                <td class="gray-color">
+                                    <a routerLink="/" class="d-flex align-items-center main-color product-info">
+                                        <img src="assets/img/recent-orders/product6.jpg" alt="product">
+                                        <div class="title">
+                                            <span>Wall Clock Cimbina</span>
+                                            ID: A3659
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>$289.50</td>
+                                <td class="stock-number">99 <span class="muted-color">(199)</span></td>
+                                <td class="stock fw-semibold main-color">Stock</td>
+                            </tr>
+                            <tr>
+                                <td class="gray-color">
+                                    <a routerLink="/" class="d-flex align-items-center main-color product-info">
+                                        <img src="assets/img/recent-orders/product7.jpg" alt="product">
+                                        <div class="title">
+                                            <span>Galaxo T6 Munsun</span>
+                                            ID: A3656
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>$289.50</td>
+                                <td class="stock-number">300 <span class="muted-color">(321)</span></td>
+                                <td class="stock fw-semibold main-color">Stock</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
