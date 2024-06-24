@@ -109,3 +109,53 @@
         </mat-card>
     </div>
 </div>
+
+<mat-card class="mb-25 tagus-card note-box">
+    <mat-card-header class="border-bottom">
+        <h5 class="mb-0">Select Product</h5>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="note-box">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Expense Type</label>
+                        <mat-form-field appearance="fill" class="w-full">
+                            <i class="ri-list-check"></i>
+                            <mat-label>Expense</mat-label>
+                            <input matInput type="text">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">Amount</label>
+                        <mat-form-field appearance="fill" class="w-full">
+                            <i class="flaticon-price-tag"></i>
+                            <mat-label>R$</mat-label>
+                            <input matInput type="number" placeholder="0.00">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="tagus-form-group">
+                        <label class="d-block mb-12 fw-semibold gray-color">More Details</label>
+                        <mat-form-field appearance="fill" class="w-full">
+                            <i class="ri-list-check"></i>
+                            <mat-label>Details</mat-label>
+                            <input matInput type="text">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <button mat-button type="submit" class="default-btn">
+                        Post Expense
+                    </button>
+                </div>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

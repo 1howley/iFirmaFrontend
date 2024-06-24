@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="text-end">
-                <button mat-button type="submit" class="default-btn">
+                <button mat-button type="submit" class="default-btn" disabled>
                     Edit Customer
                 </button>
             </div>
@@ -306,6 +306,53 @@
 
 <div class="col-xxl-8">
 
-    <app-analytics-stats></app-analytics-stats>
-    
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <mat-card class="single-stats-box tagus-card mb-25">
+                <div class="d-flex align-items-center">
+                    <div class="icon">
+                        <i class="flaticon-shopping-cart-2"></i>
+                    </div>
+                    <div class="title">
+                        <span class="d-block gray-color">Sales Amount</span>
+                        <h3>$24K</h3>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-md-4">
+            <mat-card class="single-stats-box tagus-card mb-25">
+                <div class="d-flex align-items-center">
+                    <div class="icon">
+                        <i class="flaticon-pie-chart-6"></i>
+                    </div>
+                    <div class="title">
+                        <span class="d-block gray-color">Total Balance</span> 
+                        <h3>$155K</h3>
+                    </div>
+                </div>
+                <p class="position-relative up"><i class="flaticon-trend"></i> <span>7.5%</span> below expected balance</p>
+            </mat-card>
+        </div>
+        <div class="col-md-4">
+            <mat-card class="single-stats-box tagus-card mb-25">
+                <div class="d-flex align-items-center">
+                    <div class="icon">
+                        <i class="flaticon-credit-card"></i>
+                    </div>
+                    <div class="title">
+                        <span class="d-block gray-color">Payments Amount</span>
+                        <h3>$50.5M</h3>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+
+    <div class="mb-25 text-end">
+
+        <button mat-flat-button class="gray">Print</button>
+        <button mat-flat-button class="tagus">Download</button>
+        
+    </div>
 </div>

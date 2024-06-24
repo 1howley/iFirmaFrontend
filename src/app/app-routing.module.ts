@@ -135,6 +135,7 @@ import { SaasAppComponent } from './components/dashboard/saas-app/saas-app.compo
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { CustomerDetailsComponent } from './components/pages/ecommerce/customer-details/customer-details.component';
 import { ExpensesComponent } from './components/dashboard/expenses/expenses.component';
+import { PaymentsComponent } from './components/pages/ecommerce/payments/payments.component';
 
 const routes: Routes = [
     {path: '', component: EcommerceComponent},
@@ -189,6 +190,7 @@ const routes: Routes = [
     {path: 'ecommerce/cart', component: ProductsCartComponent},
     {path: 'ecommerce/checkout', component: ProductsCheckoutComponent},
     {path: 'ecommerce/sellers', component: ProductSellersComponent},
+    {path: 'ecommerce/payments', component: PaymentsComponent},
     {path: 'ui-kit/buttons', component: ButtonsComponent},
     {path: 'ui-kit/alerts', component: AlertsComponent},
     {path: 'ui-kit/avatars', component: AvatarsComponent},
