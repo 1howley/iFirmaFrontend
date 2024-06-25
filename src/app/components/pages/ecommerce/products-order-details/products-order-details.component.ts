@@ -20,4 +20,21 @@ export class ProductsOrderDetailsComponent {
         this.themeService.toggleRTLEnabledTheme();
     }
 
+    
+    panelOpenState = false;
+
+    step = 0;
+
+    setStep(index: number) {
+        this.step = index;
+    }
+
+    nextStep() {
+        this.step++;
+    }
+
+    prevStep() {
+        this.step--;
+    }
+
 }

@@ -4,6 +4,7 @@
 - frontend
     - eliminar coisas desnecessarias
     - adicionar paginas especificas charles pedras ( fornecedor, romaneio )
+    - fatura para producao e para clientes
     - deixar mais proximo do usuario
     - gerenciador de moedas!
 

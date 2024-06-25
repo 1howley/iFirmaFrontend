@@ -419,10 +419,12 @@ import { SaSalesAnalyticsComponent } from './components/dashboard/saas-app/sa-sa
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { CustomerDetailsComponent } from './components/pages/ecommerce/customer-details/customer-details.component';
 import { ExpensesComponent } from './components/dashboard/expenses/expenses.component';
+import { PaymentsComponent } from './components/pages/ecommerce/payments/payments.component';
 
 @NgModule({
     declarations: [
         CustomerDetailsComponent,
+        PaymentsComponent,
         AppComponent,
         DashboardComponent,
         AppsComponent,
@@ -431,7 +433,7 @@ import { ExpensesComponent } from './components/dashboard/expenses/expenses.comp
         ProjectManagementComponent,
         LmsCoursesComponent,
         ChatComponent,
-        ToDoListComponent,
+        ToDoListComponent, 
         CalendarComponent,
         EmailComponent,
         SidebarComponent,
