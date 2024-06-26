@@ -1,34 +1,66 @@
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-space-between">
+    <h5 class="mb-0">Payments</h5>
+    <ol class="breadcrumb mb-0 ps-0">
+        <li class="breadcrumb-item">
+            <a routerLink="/">
+                <i class="ri-home-8-line"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item fw-semibold">Payments</li>
+    </ol>
+</div>
+
 <mat-card class="mb-25 tagus-card">
     <mat-card-header class="border-bottom">
-        <h5 class="mb-0">Stepper Label Bottom Position</h5>
+        <h5 class="mb-0">Adding Payment</h5>
     </mat-card-header>
     <mat-card-content>
-        <mat-stepper labelPosition="bottom" #stepper>
+        <mat-stepper class="mb-10" labelPosition="bottom" #stepper>
             <mat-step [stepControl]="firstFormGroup">
-                <form [formGroup]="firstFormGroup">
-                    <ng-template matStepLabel>Fill out your name</ng-template>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Name</mat-label>
-                        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-                    </mat-form-field>
-
-                    <mat-form-field appearance="fill">
-                        <mat-label>Enter email address</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-
+                <form [formGroup]="firstFormGroup" class="custom-form">
+                    <ng-template matStepLabel>Payer Data</ng-template>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label class="d-block mb-12 fw-semibold gray-color">First Name</label>
+                            <mat-form-field class="full-width-input" appearance="fill">
+                                <mat-label>Enter name</mat-label>
+                                <input matInput formControlName="firstCtrl" required>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label class="d-block mb-12 fw-semibold gray-color">Last Name</label>
+                            <mat-form-field class="full-width-input" appearance="fill">
+                                <mat-label>Enter name</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label class="d-block mb-12 fw-semibold gray-color">Email Address</label>
+                            <mat-form-field class="full-width-input" appearance="fill">
+                                <mat-label>Enter email address</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label class="d-block mb-12 fw-semibold gray-color">Phone</label>
+                            <mat-form-field class="full-width-input" appearance="fill">
+                                <mat-label>Enter phone number</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
                     <div>
                         <button mat-flat-button color="primary" matStepperNext>Next</button>
                     </div>
                 </form>
             </mat-step>
-            <mat-step [stepControl]="secondFormGroup" optional>
+            <mat-step [stepControl]="secondFormGroup">
                 <form [formGroup]="secondFormGroup">
-                    <ng-template matStepLabel>Fill out your address</ng-template>
+                    <ng-template matStepLabel>Payment Data</ng-template>
                     <mat-form-field appearance="fill">
                         <mat-label>Address</mat-label>
-                        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-                        required>
+                        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
                     </mat-form-field>
                     <div>
                         <button mat-flat-button color="primary" class="me-15" matStepperPrevious>Back</button>
